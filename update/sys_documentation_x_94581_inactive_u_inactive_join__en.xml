@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="" label="Inactive u inactive join" language="en" table="x_94581_inactive_u_inactive_join">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Inactive u inactive join</label>
+            <language>en</language>
+            <name>x_94581_inactive_u_inactive_join</name>
+            <plural>Inactive u inactive joins</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-01-14 16:58:51</sys_created_on>
+            <sys_id>286b5674db432300f70b7dda8c961945</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Inactive u inactive join</sys_name>
+            <sys_package display_value="Inactive_Users" source="x_94581_inactive_u">d86df1b0db032300f70b7dda8c961931</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Inactive_Users">d86df1b0db032300f70b7dda8c961931</sys_scope>
+            <sys_update_name>sys_documentation_x_94581_inactive_u_inactive_join__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-01-14 16:58:51</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
