@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description/>
+        <flush_cache>false</flush_cache>
+        <name>Remove reactivated users</name>
+        <run_once>true</run_once>
+        <script><![CDATA[var inactiveUser = new GlideRecord('x_94581_inactive_u_inactive_users');
+var activeUser;
+inactiveUser.query();
+while(inactiveUser.next()){
+	activeUser = new GlideRecord('sys_user');
+	activeUser.addActiveQuery();
+	activeUser.addQuery('user_name',inactiveUser.employee_id);
+	activeUser.query();
+	if(activeUser.next()){
+		inactiveUser.deleteRecord();
+	}
+}
+]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-14 20:58:23</sys_created_on>
+        <sys_id>3bc09b30dbc32300f70b7dda8c9619bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Remove reactivated users</sys_name>
+        <sys_package display_value="Inactive_Users" source="x_94581_inactive_u">d86df1b0db032300f70b7dda8c961931</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inactive_Users">d86df1b0db032300f70b7dda8c961931</sys_scope>
+        <sys_update_name>sys_script_fix_3bc09b30dbc32300f70b7dda8c9619bb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-14 20:58:23</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>
