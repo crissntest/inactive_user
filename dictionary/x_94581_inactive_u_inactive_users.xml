@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Inactive Users" max_length="40" name="x_94581_inactive_u_inactive_users" type="collection">
+        <element label="Employee ID" max_length="40" name="employee_id" type="string"/>
+    </element>
+</database>
